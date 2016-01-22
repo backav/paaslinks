@@ -1,7 +1,7 @@
 {
   "name": "小米云PaasLinks",
   "manifest_version": 2,
-  "version":"0.6",
+  "version":"0.9",
   "short_name":"PaasLinks",
   "author":"wo@xiangyang.li",
   "description": "Paas控制台增强,用于增加控制台的易用性",
@@ -9,6 +9,7 @@
   "content_scripts": [
   {
   	"matches":["https://console.mi-ae.cn/home.html","https://console.mi-ae.com.cn/home.html","https://console.mi-ae.com.sg/home.html","https://console.mi-ae.com/home.html"],
+    "css":["content.css"],
     "js": ["zepto.min.js","content.js"]
   }
   ],
